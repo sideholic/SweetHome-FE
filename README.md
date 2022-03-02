@@ -15,5 +15,6 @@
 - styled-components : 5.3.3
 - framer-motion : 6.2.8
 - react-intersection-observer: 8.33.1
+- react-icons: 4.3.1
 
 ### Dev List
