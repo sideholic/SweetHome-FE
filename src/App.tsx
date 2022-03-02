@@ -4,7 +4,7 @@ import { darkTheme, lightTheme } from "./theme/theme";
 import { useEffect } from "react";
 import { useRecoilState } from "recoil";
 import { isDarkAtom } from "./atom/atom";
-import GlobalStyle from "./styles/GlobalStyle";
+import { GlobalStyle } from "./styles/GlobalStyle";
 import { ReactQueryDevtools } from "react-query/devtools";
 import Router from "./router/Router";
 

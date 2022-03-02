@@ -1,9 +1,7 @@
 // RESET CSS
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
-const GlobalStyle = createGlobalStyle`
-  
-
+export const GlobalStyle = createGlobalStyle`
   html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
   a, abbr, acronym, address, big, cite, code,
@@ -74,4 +72,9 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-export default GlobalStyle;
+export const CommInner = styled.div`
+  margin: 0 auto;
+  width: 1080px;
+  position: relative;
+  height: inherit;
+`;
