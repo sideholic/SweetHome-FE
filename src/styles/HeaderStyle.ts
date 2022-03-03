@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-/* Header Wrapper */
+/* header Wrapper */
 export const HeaderWrapper = styled.header`
   height: 60vh;
 `;
-/* Header 최상단 로고, 알람 div 영역 */
+/* header 최상단 로고, 알람 div 영역 */
 export const HeaderTop = styled.div`
   display: grid;
   width: 1080px;
@@ -13,18 +13,18 @@ export const HeaderTop = styled.div`
   height: 5rem;
   align-items: center;
 `;
-/* Header 로고 */
-export const Logo = styled.span`
+/* header 로고 */
+export const Logo = styled.h1`
   font-size: 1.875rem;
   font-weight: bold;
   text-align: center;
   color: ${(props) => props.theme.greenColor.green4};
 `;
-/* Header 알람 */
+/* header 알람 */
 export const Alarm = styled.div`
   text-align: right;
 `;
-/* 메인페이지 Header 카테고리 해시태그 div 영역 */
+/* 메인페이지 header 카테고리 해시태그 div 영역 */
 export const HeaderCategory = styled.div`
   height: 15rem;
 `;
@@ -44,7 +44,7 @@ export const Category = styled.ul`
   li {
     margin: 0.333em;
     padding-right: 0.133em;
-    font-size: 15px;
+    font-size: 0.938rem;
 
     a {
       display: block;
@@ -63,7 +63,7 @@ export const HeaderImg = styled.img`
   height: 21.875rem;
   width: 34.375rem;
 `;
-/* 메인페이지 Header 검색바 */
+/* 메인페이지 header 검색바 */
 export const HeaderSearch = styled.div`
   height: calc(60vh - 5rem - 15rem);
   background-color: ${(props) => props.theme.greenColor.green3};
@@ -138,7 +138,7 @@ export const ToggleCheckBox = styled.input`
 `;
 /* 검색창 */
 export const SearchInput = styled.input`
-  font-size: 20px;
+  font-size: 1.25rem;
   width: 27.5em;
   height: 2.1em;
   padding: 1em;

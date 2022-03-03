@@ -10,15 +10,7 @@ const greenColor: greenTheme = {
 };
 
 export const lightTheme: DefaultTheme = {
-  bgColor: "#F5F5F5",
+  bgColor: "#FFFFFF",
   textColor: "#000000",
   greenColor: greenColor,
-  isDark: false,
-};
-
-export const darkTheme: DefaultTheme = {
-  bgColor: "#2F3640",
-  textColor: "F5F5F5",
-  greenColor: greenColor,
-  isDark: true,
 };

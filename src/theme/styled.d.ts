@@ -13,6 +13,5 @@ declare module "styled-components" {
     textColor: string;
     bgColor: string;
     greenColor: greenTheme;
-    isDark: boolean;
   }
 }
