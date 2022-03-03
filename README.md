@@ -4,7 +4,7 @@
 <img src="https://img.shields.io/badge/-typescript 4.5.5-3178C6?style=plastic&logo=Typescript&logoColor=white"/>
 
 ### Page
-- https://jeondoh.github.io/sweet-home/
+- https://sideholic.github.io/SweetHome-FE/
 
 ### npm (CRA project to typescript)
 - recoil : 0.6.1
