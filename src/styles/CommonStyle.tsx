@@ -5,7 +5,7 @@ export const CommonMoreBtn = styled.span`
   display: block;
   position: absolute;
   right: 0;
-  bottom: 10px;
+  bottom: 0.625rem;
   color: ${(props) => props.theme.greenColor.green4};
   &:after {
     content: " >";
@@ -13,7 +13,7 @@ export const CommonMoreBtn = styled.span`
 `;
 /* 공통 제목 div */
 export const CommonTitleDiv = styled.div`
-  height: 142px;
+  height: 8.875rem;
 `;
 /* 공통 제목 */
 export const CommonTitle = styled.h2`

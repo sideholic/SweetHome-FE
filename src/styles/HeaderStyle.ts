@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 /* header Wrapper */
 export const HeaderWrapper = styled.header`
-  height: 570px;
+  height: 35.625rem;
 `;
 /* header 최상단 로고, 알람 div 영역 */
 export const HeaderTop = styled.div`
@@ -89,29 +89,29 @@ export const ExplainInnerDiv = styled.div`
   justify-content: center;
   align-items: center;
   right: 0;
-  bottom: 5px;
+  bottom: 0.313rem;
 `;
 /* 토글 버튼 */
 export const ToggleCheckBoxWrapper = styled.div`
-  margin-top: 7px;
+  margin-top: 0.438rem;
   position: relative;
 `;
 export const ToggleCheckBoxLabel = styled.label`
   position: absolute;
   top: 0;
   left: 0;
-  width: 42px;
-  height: 26px;
-  border-radius: 15px;
+  width: 2.625rem;
+  height: 1.625rem;
+  border-radius: 0.938rem;
   background: gray;
   cursor: pointer;
   &::after {
     content: "";
     display: block;
     border-radius: 50%;
-    width: 18px;
-    height: 18px;
-    margin: 3px;
+    width: 1.125rem;
+    height: 1.125rem;
+    margin: 0.188rem;
     background: #ffffff;
     box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.2);
     transition: 0.2s;
@@ -120,18 +120,18 @@ export const ToggleCheckBoxLabel = styled.label`
 export const ToggleCheckBox = styled.input`
   opacity: 0;
   z-index: 1;
-  border-radius: 15px;
-  width: 42px;
-  height: 26px;
+  border-radius: 0.938rem;
+  width: 2.625rem;
+  height: 1.625rem;
   &:checked + ${ToggleCheckBoxLabel} {
     background: ${(props) => props.theme.greenColor.green4};
     &::after {
       content: "";
       display: block;
       border-radius: 50%;
-      width: 18px;
-      height: 18px;
-      margin-left: 21px;
+      width: 1.125rem;
+      height: 1.125rem;
+      margin-left: 1.313rem;
       transition: 0.2s;
     }
   }

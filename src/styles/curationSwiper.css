@@ -5,8 +5,8 @@
 
 .swiper-slide {
   background: #fff;
-  height: 23.75rem !important;
-  border-radius: 1.875rem;
+  height: 24.35rem !important;
+  border-radius: 0.8rem;
   box-shadow: 2px 4px rgba(0, 0, 0, 0.1);
 }
 .swiper-slide img {
@@ -15,7 +15,7 @@
   height: 40%;
   object-fit: cover;
   overflow: hidden;
-  border-radius: 1.875rem;
+  border-radius: 0.8rem;
 }
 .swiper-slide div {
   height: 60%;

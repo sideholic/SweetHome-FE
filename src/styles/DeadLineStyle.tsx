@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 /* Wrapper */
 export const DeadLineWrapper = styled.div`
-  height: 570px;
+  height: 35.625rem;
 `;
 /* Wrapper */
 export const DeadLineCardWrapper = styled.div`
-  height: 425px;
+  height: 26.563rem;
 `;
 /* 마감 임박 Grid wrapper */
 export const DeadLineCardGrid = styled.div`
@@ -19,8 +19,8 @@ export const DeadLineListFlex = styled.div`
   align-items: center;
   img {
     display: block;
-    width: 270px;
-    height: 200px;
+    width: 16.875rem;
+    height: 12.5rem;
   }
   div {
     margin-left: 0.5em;

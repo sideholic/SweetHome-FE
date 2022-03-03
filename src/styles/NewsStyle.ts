@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 /* Wrapper */
 export const NewsWrapper = styled.div`
-  height: 655px;
+  height: 40.938rem;
 `;
 /* Wrapper */
 export const NewsInner = styled.div`
-  height: 425px;
+  height: 26.563rem;
 `;
 /* 뉴스 grid Wrapper */
 export const NewsGrid = styled.div`
