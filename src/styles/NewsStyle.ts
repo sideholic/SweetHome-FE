@@ -20,6 +20,7 @@ export const NewsGrid = styled.div`
     height: 100%;
     object-fit: cover;
     overflow: hidden;
+    transform: rotateY(180deg);
   }
 `;
 /* 뉴스 제목 리스트 */

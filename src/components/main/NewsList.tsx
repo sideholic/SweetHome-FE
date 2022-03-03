@@ -20,7 +20,6 @@ export default function NewsList() {
       <NewsInner>
         <CommInner>
           <NewsGrid>
-            <img src={require("../../images/NewsImg.jpg")} alt="newsImg" />
             <NewsTitleList>
               <NewsTitle>
                 "푸틴과 같은 종말 맞길 바란다" 이재명 '우크라' 발언에 세계언...
@@ -50,6 +49,7 @@ export default function NewsList() {
                 [Newsmaker] Leaving their instruments behind, Ukrainian...
               </NewsTitle>
             </NewsTitleList>
+            <img src={require("../../images/NewsImg.jpg")} alt="newsImg" />
           </NewsGrid>
         </CommInner>
       </NewsInner>
