@@ -1,10 +1,8 @@
 import {
   CurationCardWrapper,
-  CurationTitle,
-  CurationTitleDiv,
   CurationWrapper,
 } from "../../styles/CurationStyle";
-import "../../styles/curationSwiper.scss";
+import "../../styles/curationSwiper.css";
 import { CommInner } from "../../styles/GlobalStyle";
 
 import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper";
@@ -12,20 +10,24 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { MoreBtn } from "../../styles/CommonStyle";
+import {
+  CommonMoreBtn,
+  CommonTitle,
+  CommonTitleDiv,
+} from "../../styles/CommonStyle";
 
 export default function CurationList() {
   SwiperCore.use([Autoplay]);
   return (
     <CurationWrapper>
-      <CurationTitleDiv>
+      <CommonTitleDiv>
         <CommInner>
-          <CurationTitle>
+          <CommonTitle>
             청약 큐레이션 <span>HOT</span>
-          </CurationTitle>
-          <MoreBtn>더보기</MoreBtn>
+          </CommonTitle>
+          <CommonMoreBtn>더보기</CommonMoreBtn>
         </CommInner>
-      </CurationTitleDiv>
+      </CommonTitleDiv>
 
       <CurationCardWrapper>
         <CommInner>
