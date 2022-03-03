@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/sweet-home/static/css/main.5becc1b5.css",
+    "main.js": "/sweet-home/static/js/main.23009d95.js",
+    "static/media/NewsImg.jpg": "/sweet-home/static/media/NewsImg.57144609cab9df87b5e1.jpg",
+    "static/media/HeaderImg.png": "/sweet-home/static/media/HeaderImg.b5013664612b190b1f06.png",
+    "index.html": "/sweet-home/index.html",
+    "main.5becc1b5.css.map": "/sweet-home/static/css/main.5becc1b5.css.map",
+    "main.23009d95.js.map": "/sweet-home/static/js/main.23009d95.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5becc1b5.css",
+    "static/js/main.23009d95.js"
+  ]
+}
