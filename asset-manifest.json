@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/SweetHome-FE/static/css/main.5becc1b5.css",
-    "main.js": "/SweetHome-FE/static/js/main.6bfa1dfa.js",
+    "main.js": "/SweetHome-FE/static/js/main.8b332026.js",
     "static/media/NewsImg.jpg": "/SweetHome-FE/static/media/NewsImg.57144609cab9df87b5e1.jpg",
     "static/media/HeaderImg.png": "/SweetHome-FE/static/media/HeaderImg.b5013664612b190b1f06.png",
     "index.html": "/SweetHome-FE/index.html",
     "main.5becc1b5.css.map": "/SweetHome-FE/static/css/main.5becc1b5.css.map",
-    "main.6bfa1dfa.js.map": "/SweetHome-FE/static/js/main.6bfa1dfa.js.map"
+    "main.8b332026.js.map": "/SweetHome-FE/static/js/main.8b332026.js.map"
   },
   "entrypoints": [
     "static/css/main.5becc1b5.css",
-    "static/js/main.6bfa1dfa.js"
+    "static/js/main.8b332026.js"
   ]
 }
