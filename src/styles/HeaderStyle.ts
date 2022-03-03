@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 /* header Wrapper */
 export const HeaderWrapper = styled.header`
-  height: 60vh;
+  height: 570px;
 `;
 /* header 최상단 로고, 알람 div 영역 */
 export const HeaderTop = styled.div`
@@ -65,7 +65,7 @@ export const HeaderImg = styled.img`
 `;
 /* 메인페이지 header 검색바 */
 export const HeaderSearch = styled.div`
-  height: calc(60vh - 5rem - 15rem);
+  height: calc(570px - 5rem - 15rem);
   background-color: ${(props) => props.theme.greenColor.green3};
 `;
 /* 검색창 */

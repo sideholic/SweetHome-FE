@@ -13,7 +13,7 @@ export const CommonMoreBtn = styled.span`
 `;
 /* 공통 제목 div */
 export const CommonTitleDiv = styled.div`
-  height: 15vh;
+  height: 142px;
 `;
 /* 공통 제목 */
 export const CommonTitle = styled.h2`

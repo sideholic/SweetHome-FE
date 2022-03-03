@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 /* Wrapper */
 export const DeadLineWrapper = styled.div`
-  height: 60vh;
+  height: 570px;
 `;
 /* Wrapper */
 export const DeadLineCardWrapper = styled.div`
-  height: 45vh;
+  height: 425px;
 `;
 /* 마감 임박 Grid wrapper */
 export const DeadLineCardGrid = styled.div`
