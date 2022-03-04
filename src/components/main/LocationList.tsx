@@ -1,16 +1,24 @@
 import useCurrentLocation from "../../hooks/useCurrentLocation";
-import { LocationWrapper } from "../../styles/LocationStyle";
+import {
+  LocationCard,
+  LocationListFlex,
+  LocationWrapper,
+  LocationCardTitle,
+  LocationCardTags,
+  LocationInfos,
+} from "../../styles/LocationStyle";
 import { CommInner } from "../../styles/GlobalStyle";
 import {
   CommonMoreBtn,
   CommonTitle,
   CommonTitleDiv,
 } from "../../styles/CommonStyle";
+import { IoLocationOutline } from "react-icons/io5";
 
 export default function LocationList() {
   const geolocationOptions = {
     enableHighAccuracy: true,
-    timeout: 1000 * 60, // 1 min (1000 ms * 60 sec * 1 minute = 60 000ms)
+    timeout: 1000 * 60, // ms
     maximumAge: 1000 * 3600 * 24, // 24 hour
   };
 
@@ -25,12 +33,101 @@ export default function LocationList() {
           <CommonMoreBtn>더보기</CommonMoreBtn>
         </CommInner>
       </CommonTitleDiv>
-      <div style={{ textAlign: "center" }}>
-        ㅋㅋ 위치 해킹함 ㅅㄱㅇ
-        <br />
-        <br />
-        {location?.latitude}, {location?.longitude}
-      </div>
+      <CommInner>
+        <LocationListFlex>
+          <LocationCard>
+            <div className="locoImg">
+              <img src={require("../../images/building.png")} alt="test" />
+            </div>
+            <LocationInfos>
+              <LocationCardTitle>빌리브 명지 듀클래스 1단지</LocationCardTitle>
+              <LocationCardTags>
+                <span>
+                  <IoLocationOutline />
+                  성수동 | 임대주택
+                </span>
+                <span>22/03/03 ~ 22/04/04</span>
+              </LocationCardTags>
+            </LocationInfos>
+          </LocationCard>
+          <LocationCard>
+            <div className="locoImg">
+              <img src={require("../../images/building.png")} alt="test" />
+            </div>
+            <LocationInfos>
+              <LocationCardTitle>빌리브 명지 듀클래스 2단지</LocationCardTitle>
+              <LocationCardTags>
+                <span>
+                  <IoLocationOutline />
+                  신림동 | 임대주택
+                </span>
+                <span>22/03/03 ~ 22/04/04</span>
+              </LocationCardTags>
+            </LocationInfos>
+          </LocationCard>
+          <LocationCard>
+            <div className="locoImg">
+              <img src={require("../../images/building.png")} alt="test" />
+            </div>
+            <LocationInfos>
+              <LocationCardTitle>빌리브 명지 듀클래스 3단지</LocationCardTitle>
+              <LocationCardTags>
+                <span>
+                  <IoLocationOutline />
+                  인사동 | 임대주택
+                </span>
+                <span>22/03/03 ~ 22/04/04</span>
+              </LocationCardTags>
+            </LocationInfos>
+          </LocationCard>
+
+          <LocationCard>
+            <div className="locoImg">
+              <img src={require("../../images/building.png")} alt="test" />
+            </div>
+            <LocationInfos>
+              <LocationCardTitle>빌리브 명지 듀클래스 1단지</LocationCardTitle>
+              <LocationCardTags>
+                <span>
+                  <IoLocationOutline />
+                  성수동 | 임대주택
+                </span>
+                <span>22/03/03 ~ 22/04/04</span>
+              </LocationCardTags>
+            </LocationInfos>
+          </LocationCard>
+          <LocationCard>
+            <div className="locoImg">
+              <img src={require("../../images/building.png")} alt="test" />
+            </div>
+            <LocationInfos>
+              <LocationCardTitle>빌리브 명지 듀클래스 2단지</LocationCardTitle>
+              <LocationCardTags>
+                <span>
+                  <IoLocationOutline />
+                  신림동 | 임대주택
+                </span>
+                <span>22/03/03 ~ 22/04/04</span>
+              </LocationCardTags>
+            </LocationInfos>
+          </LocationCard>
+          <LocationCard>
+            <div className="locoImg">
+              <img src={require("../../images/building.png")} alt="test" />
+            </div>
+            <LocationInfos>
+              <LocationCardTitle>빌리브 명지 듀클래스 3단지</LocationCardTitle>
+              <LocationCardTags>
+                <span>
+                  <IoLocationOutline />
+                  인사동 | 임대주택
+                </span>
+                <span>22/03/03 ~ 22/04/04</span>
+              </LocationCardTags>
+            </LocationInfos>
+          </LocationCard>
+        </LocationListFlex>
+      </CommInner>
     </LocationWrapper>
   ) : null;
 }

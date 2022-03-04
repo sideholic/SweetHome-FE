@@ -2,11 +2,7 @@ import styled from "styled-components";
 
 /* Wrapper */
 export const DeadLineWrapper = styled.div`
-  height: 35.625rem;
-`;
-/* Wrapper */
-export const DeadLineCardWrapper = styled.div`
-  height: 26.563rem;
+  height: 42.5rem;
 `;
 /* 마감 임박 Grid wrapper */
 export const DeadLineCardGrid = styled.div`
@@ -17,14 +13,25 @@ export const DeadLineCardGrid = styled.div`
 export const DeadLineListFlex = styled.div`
   display: flex;
   align-items: center;
+
+  &:nth-child(n + 3) {
+    margin-top: 50px;
+  }
+
   img {
     display: block;
     width: 16.875rem;
     height: 12.5rem;
+    border-radius: 0.4rem;
   }
   div {
-    margin-left: 0.5em;
+    margin-left: 1em;
   }
+
+  p {
+    line-height: 1.3;
+  }
+
   .deathLineInfo {
     margin-top: 1.429em;
     font-size: 0.875rem;

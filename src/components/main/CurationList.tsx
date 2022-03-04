@@ -46,16 +46,28 @@ export default function CurationList() {
             modules={[Pagination, Navigation]}
           >
             <SwiperSlide>
-              <img src={require("../../images/NewsImg.jpg")} alt="test" />
-              <div>내용내용내용내용내용내용내용내용내용내용</div>
+              <div className="imgWrapper">
+                <img src={require("../../images/building.png")} alt="test" />
+              </div>
+              <div className="curInfo">
+                내용내용내용내용내용내용내용내용내용내용
+              </div>
             </SwiperSlide>
             <SwiperSlide>
-              <img src={require("../../images/HeaderImg.png")} alt="test" />
-              <div>내용내용내용내용내용내용내용내용내용내용</div>
+              <div className="imgWrapper">
+                <img src={require("../../images/building.png")} alt="test" />
+              </div>
+              <div className="curInfo">
+                내용내용내용내용내용내용내용내용내용내용
+              </div>
             </SwiperSlide>
             <SwiperSlide>
-              <img src={require("../../images/NewsImg.jpg")} alt="test" />
-              <div>내용내용내용내용내용내용내용내용내용내용</div>
+              <div className="imgWrapper">
+                <img src={require("../../images/building.png")} alt="test" />
+              </div>
+              <div className="curInfo">
+                내용내용내용내용내용내용내용내용내용내용
+              </div>
             </SwiperSlide>
             <SwiperSlide>Slide 4</SwiperSlide>
             <SwiperSlide>Slide 5</SwiperSlide>
