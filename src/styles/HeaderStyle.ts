@@ -91,6 +91,10 @@ export const ExplainInnerDiv = styled.div`
   right: 0;
   bottom: 0.313rem;
 `;
+/* 툴팁 */
+export const ToolTipExplain = styled.span`
+  cursor: pointer;
+`;
 /* 토글 버튼 */
 export const ToggleCheckBoxWrapper = styled.div`
   margin-top: 0.438rem;

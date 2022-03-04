@@ -16,6 +16,8 @@ export const LocationCard = styled.div`
   width: 330px; // 고정
   border-radius: 0.8rem;
   background-color: #fff;
+  box-shadow: 1px 2px rgba(0, 0, 0, 0.1);
+
   &:nth-child(n + 4) {
     margin-top: 45px;
   }

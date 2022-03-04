@@ -14,10 +14,12 @@ import {
   ToggleCheckBoxLabel,
   ToggleCheckBox,
   ToggleCheckBoxWrapper,
+  ToolTipExplain,
 } from "../../styles/HeaderStyle";
 import LogoAlarmHeader from "./LogoAlarmHeader";
 import { AiOutlineSearch } from "react-icons/ai";
 import { BsQuestionCircle } from "react-icons/bs";
+import ReactTooltip from "react-tooltip";
 
 export default function Header() {
   return (
@@ -82,7 +84,17 @@ export default function Header() {
                   <ToggleCheckBox id="checkbox" type="checkbox" />
                   <ToggleCheckBoxLabel htmlFor="checkbox" />
                 </ToggleCheckBoxWrapper>
-                <BsQuestionCircle size="20" color="#fff" />
+                {/* 툴팁 */}
+                <ToolTipExplain>
+                  <a data-tip data-for="curationExplain">
+                    <BsQuestionCircle size="20" color="#fff" />
+                  </a>
+                  <ReactTooltip id="curationExplain" aria-haspopup="true">
+                    <span>
+                      ON : 큐레이션 카드내의 검색어가 자동 추가 됩니다
+                    </span>
+                  </ReactTooltip>
+                </ToolTipExplain>
               </ExplainInnerDiv>
             </ExplainDiv>
             {/* 검색 INPUT */}
