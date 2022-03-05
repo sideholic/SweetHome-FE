@@ -4,6 +4,7 @@ import LocationList from "../components/main/LocationList";
 import NewsList from "../components/main/NewsList";
 import Header from "../components/header/Header";
 import React from "react";
+import Footer from "../components/footer/Footer";
 
 export default function Home() {
   return (
@@ -18,6 +19,8 @@ export default function Home() {
       <LocationList />
       {/* 뉴스 */}
       <NewsList />
+      {/* 푸터 */}
+      <Footer />
     </>
   );
 }

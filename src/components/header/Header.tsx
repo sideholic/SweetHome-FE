@@ -5,17 +5,20 @@ import {
   HeaderCategory,
   HeaderImg,
   HeaderSearch,
+  HeaderTop,
   HeaderWrapper,
+  Logo,
   SearchBarDiv,
 } from "../../styles/HeaderStyle";
-import LogoAlarmHeader from "./LogoAlarmHeader";
 import SearchBar from "./SearchBar";
 
 export default function Header() {
   return (
     <HeaderWrapper>
-      {/* 로고, 알람 */}
-      <LogoAlarmHeader />
+      {/* 로고 */}
+      <HeaderTop>
+        <Logo>SWEET HOME</Logo>
+      </HeaderTop>
       {/* 카테고리, 이미지 */}
       <HeaderCategory>
         <CommInner>

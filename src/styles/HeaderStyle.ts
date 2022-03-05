@@ -6,12 +6,12 @@ export const HeaderWrapper = styled.header`
 `;
 /* header 최상단 로고, 알람 div 영역 */
 export const HeaderTop = styled.div`
-  display: grid;
+  display: flex;
   width: 1080px;
   margin: 0 auto;
-  grid-template-columns: repeat(3, 1fr);
   height: 5rem;
   align-items: center;
+  justify-content: center;
 `;
 /* header 로고 */
 export const Logo = styled.h1`
@@ -19,10 +19,6 @@ export const Logo = styled.h1`
   font-weight: bold;
   text-align: center;
   color: ${(props) => props.theme.greenColor.green4};
-`;
-/* header 알람 */
-export const Alarm = styled.div`
-  text-align: right;
 `;
 /* 메인페이지 header 카테고리 해시태그 div 영역 */
 export const HeaderCategory = styled.div`

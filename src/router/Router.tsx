@@ -2,7 +2,6 @@ import { Routes, Route } from "react-router-dom";
 import React from "react";
 import Home from "./Home";
 import NotFound from "./NotFound";
-import Footer from "../components/footer/Footer";
 import Search from "./Search";
 
 export default function Router() {
@@ -15,7 +14,6 @@ export default function Router() {
         </Route>
         <Route path="*" element={<NotFound />} /> {/* 404 */}
       </Routes>
-      {/*<Footer />*/}
     </>
   );
 }

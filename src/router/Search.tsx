@@ -1,5 +1,10 @@
-import LogoAlarmHeader from "../components/header/LogoAlarmHeader";
-import { Category, HeaderSearch, SearchBarDiv } from "../styles/HeaderStyle";
+import {
+  Category,
+  HeaderSearch,
+  HeaderTop,
+  Logo,
+  SearchBarDiv,
+} from "../styles/HeaderStyle";
 import { CommInner } from "../styles/GlobalStyle";
 import SearchBar from "../components/header/SearchBar";
 import { SearchCategory, SearchWrapper } from "../styles/SearchStyle";
@@ -8,7 +13,9 @@ import SearchResult from "../components/search/SearchResult";
 export default function Search() {
   return (
     <SearchWrapper>
-      <LogoAlarmHeader />
+      <HeaderTop>
+        <Logo>SWEET HOME</Logo>
+      </HeaderTop>
       {/* 검색바 */}
       <HeaderSearch>
         <CommInner>
