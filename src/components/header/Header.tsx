@@ -2,24 +2,14 @@ import { CommInner } from "../../styles/GlobalStyle";
 import {
   Category,
   CategoryGrid,
-  ExplainDiv,
-  ExplainInnerDiv,
   HeaderCategory,
   HeaderImg,
   HeaderSearch,
   HeaderWrapper,
-  SearchBar,
-  SearchBtn,
-  SearchInput,
-  ToggleCheckBoxLabel,
-  ToggleCheckBox,
-  ToggleCheckBoxWrapper,
-  ToolTipExplain,
+  SearchBarDiv,
 } from "../../styles/HeaderStyle";
 import LogoAlarmHeader from "./LogoAlarmHeader";
-import { AiOutlineSearch } from "react-icons/ai";
-import { BsQuestionCircle } from "react-icons/bs";
-import ReactTooltip from "react-tooltip";
+import SearchBar from "./SearchBar";
 
 export default function Header() {
   return (
@@ -76,33 +66,9 @@ export default function Header() {
       {/* 검색바 */}
       <HeaderSearch>
         <CommInner>
-          <SearchBar>
-            {/* 큐레이션 ON / OFF */}
-            <ExplainDiv>
-              <ExplainInnerDiv>
-                <ToggleCheckBoxWrapper>
-                  <ToggleCheckBox id="checkbox" type="checkbox" />
-                  <ToggleCheckBoxLabel htmlFor="checkbox" />
-                </ToggleCheckBoxWrapper>
-                {/* 툴팁 */}
-                <ToolTipExplain>
-                  <a data-tip data-for="curationExplain">
-                    <BsQuestionCircle size="20" color="#fff" />
-                  </a>
-                  <ReactTooltip id="curationExplain" aria-haspopup="true">
-                    <span>
-                      ON : 큐레이션 카드내의 검색어가 자동 추가 됩니다
-                    </span>
-                  </ReactTooltip>
-                </ToolTipExplain>
-              </ExplainInnerDiv>
-            </ExplainDiv>
-            {/* 검색 INPUT */}
-            <SearchInput placeholder="민간분양을 검색해보세요." />
-            <SearchBtn>
-              <AiOutlineSearch size="26" color="#fff" />
-            </SearchBtn>
-          </SearchBar>
+          <SearchBarDiv>
+            <SearchBar />
+          </SearchBarDiv>
         </CommInner>
       </HeaderSearch>
     </HeaderWrapper>

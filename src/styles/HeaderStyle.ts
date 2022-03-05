@@ -69,7 +69,7 @@ export const HeaderSearch = styled.div`
   background-color: ${(props) => props.theme.greenColor.green3};
 `;
 /* 검색창 */
-export const SearchBar = styled.div`
+export const SearchBarDiv = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

@@ -7,7 +7,7 @@ export default function LogoAlarmHeader() {
       <div />
       <Logo>SWEET HOME</Logo>
       <Alarm>
-        <AiTwotoneBell size="36" color="#f0b102" />
+        <AiTwotoneBell size="28" color="#f0b102" />
       </Alarm>
     </HeaderTop>
   );
