@@ -31,23 +31,3 @@ export const CommonTitle = styled.h2`
     color: ${(props) => props.theme.greenColor.green4};
   }
 `;
-/* 화면 우측 하단 bell 버튼 */
-export const AlarmDiv = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  background-color: ${(props) => props.theme.greenColor.green4};
-  width: 70px;
-  height: 70px;
-  bottom: 50px;
-  right: 50px;
-  border-radius: 50px;
-  cursor: pointer;
-  z-index: 999;
-
-  img {
-    width: 45%;
-    height: 50%;
-  }
-`;
