@@ -7,12 +7,14 @@ import {
 } from "../styles/HeaderStyle";
 import { CommInner } from "../styles/GlobalStyle";
 import SearchBar from "../components/header/SearchBar";
-import { SearchCategory, SearchWrapper } from "../styles/SearchStyle";
+import { SearchCategory } from "../styles/SearchStyle";
 import SearchResult from "../components/search/SearchResult";
+import React from "react";
+import Footer from "../components/footer/Footer";
 
 export default function Search() {
   return (
-    <SearchWrapper>
+    <>
       <HeaderTop>
         <Logo>SWEET HOME</Logo>
       </HeaderTop>
@@ -43,9 +45,11 @@ export default function Search() {
             </SearchCategory>
           </SearchBarDiv>
         </CommInner>
-        {/* 검색결과 */}
-        <SearchResult />
       </HeaderSearch>
-    </SearchWrapper>
+      {/* 검색결과 */}
+      <SearchResult />
+      {/* 푸터 */}
+      <Footer />
+    </>
   );
 }

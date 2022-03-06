@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 /* Wrapper */
 export const NewsWrapper = styled.div`
-  height: 40.938rem;
+  height: 37.5rem;
 `;
 /* Wrapper */
 export const NewsInner = styled.div`
-  height: 26.563rem;
+  height: 28.625rem;
 `;
 /* 뉴스 grid Wrapper */
 export const NewsGrid = styled.div`
@@ -14,13 +14,20 @@ export const NewsGrid = styled.div`
   grid-gap: 3rem;
   height: 100%;
   grid-template-columns: repeat(2, 1fr);
-  img {
-    display: block;
+
+  .newsImgDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
+  }
+
+  img {
+    width: 80%;
+    height: 80%;
     object-fit: cover;
     overflow: hidden;
-    transform: rotateY(180deg);
   }
 `;
 /* 뉴스 제목 리스트 */

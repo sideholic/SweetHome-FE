@@ -6,6 +6,8 @@ import {
   LocationCardTitle,
   LocationCardTags,
   LocationInfos,
+  LocationCardImg,
+  LocationCardLoco,
 } from "../../styles/LocationStyle";
 import { CommInner } from "../../styles/GlobalStyle";
 import {
@@ -37,45 +39,54 @@ export default function LocationList() {
         <LocationListFlex>
           <LocationCard>
             <div className="locoImg">
-              <img src={require("../../images/building.png")} alt="test" />
+              <LocationCardImg
+                src={require("../../images/building.png")}
+                alt="test"
+              />
+              <LocationCardLoco>
+                <IoLocationOutline />
+                성수동 | 임대주택
+              </LocationCardLoco>
             </div>
             <LocationInfos>
               <LocationCardTitle>빌리브 명지 듀클래스 1단지</LocationCardTitle>
               <LocationCardTags>
-                <span>
-                  <IoLocationOutline />
-                  성수동 | 임대주택
-                </span>
                 <span>22/03/03 ~ 22/04/04</span>
               </LocationCardTags>
             </LocationInfos>
           </LocationCard>
           <LocationCard>
             <div className="locoImg">
-              <img src={require("../../images/building.png")} alt="test" />
+              <LocationCardImg
+                src={require("../../images/building.png")}
+                alt="test"
+              />
+              <LocationCardLoco>
+                <IoLocationOutline />
+                성수동 | 임대주택
+              </LocationCardLoco>
             </div>
             <LocationInfos>
               <LocationCardTitle>빌리브 명지 듀클래스 2단지</LocationCardTitle>
               <LocationCardTags>
-                <span>
-                  <IoLocationOutline />
-                  신림동 | 임대주택
-                </span>
                 <span>22/03/03 ~ 22/04/04</span>
               </LocationCardTags>
             </LocationInfos>
           </LocationCard>
           <LocationCard>
             <div className="locoImg">
-              <img src={require("../../images/building.png")} alt="test" />
+              <LocationCardImg
+                src={require("../../images/building.png")}
+                alt="test"
+              />
+              <LocationCardLoco>
+                <IoLocationOutline />
+                신림동 | 임대주택
+              </LocationCardLoco>
             </div>
             <LocationInfos>
               <LocationCardTitle>빌리브 명지 듀클래스 3단지</LocationCardTitle>
               <LocationCardTags>
-                <span>
-                  <IoLocationOutline />
-                  인사동 | 임대주택
-                </span>
                 <span>22/03/03 ~ 22/04/04</span>
               </LocationCardTags>
             </LocationInfos>
@@ -83,45 +94,54 @@ export default function LocationList() {
 
           <LocationCard>
             <div className="locoImg">
-              <img src={require("../../images/building.png")} alt="test" />
+              <LocationCardImg
+                src={require("../../images/building.png")}
+                alt="test"
+              />
+              <LocationCardLoco>
+                <IoLocationOutline />
+                인사동 | 임대주택
+              </LocationCardLoco>
             </div>
             <LocationInfos>
               <LocationCardTitle>빌리브 명지 듀클래스 1단지</LocationCardTitle>
               <LocationCardTags>
-                <span>
-                  <IoLocationOutline />
-                  성수동 | 임대주택
-                </span>
                 <span>22/03/03 ~ 22/04/04</span>
               </LocationCardTags>
             </LocationInfos>
           </LocationCard>
           <LocationCard>
             <div className="locoImg">
-              <img src={require("../../images/building.png")} alt="test" />
+              <LocationCardImg
+                src={require("../../images/building.png")}
+                alt="test"
+              />
+              <LocationCardLoco>
+                <IoLocationOutline />
+                신림동 | 임대주택
+              </LocationCardLoco>
             </div>
             <LocationInfos>
               <LocationCardTitle>빌리브 명지 듀클래스 2단지</LocationCardTitle>
               <LocationCardTags>
-                <span>
-                  <IoLocationOutline />
-                  신림동 | 임대주택
-                </span>
                 <span>22/03/03 ~ 22/04/04</span>
               </LocationCardTags>
             </LocationInfos>
           </LocationCard>
           <LocationCard>
             <div className="locoImg">
-              <img src={require("../../images/building.png")} alt="test" />
+              <LocationCardImg
+                src={require("../../images/building.png")}
+                alt="test"
+              />
+              <LocationCardLoco>
+                <IoLocationOutline />
+                인사동 | 임대주택
+              </LocationCardLoco>
             </div>
             <LocationInfos>
               <LocationCardTitle>빌리브 명지 듀클래스 3단지</LocationCardTitle>
               <LocationCardTags>
-                <span>
-                  <IoLocationOutline />
-                  인사동 | 임대주택
-                </span>
                 <span>22/03/03 ~ 22/04/04</span>
               </LocationCardTags>
             </LocationInfos>

@@ -49,7 +49,9 @@ export default function NewsList() {
                 [Newsmaker] Leaving their instruments behind, Ukrainian...
               </NewsTitle>
             </NewsTitleList>
-            <img src={require("../../images/NewsImg.jpg")} alt="newsImg" />
+            <div className="newsImgDiv">
+              <img src={require("../../images/newsImg.png")} alt="newsImg" />
+            </div>
           </NewsGrid>
         </CommInner>
       </NewsInner>

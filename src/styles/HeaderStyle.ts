@@ -57,7 +57,7 @@ export const HeaderImg = styled.img`
   top: -1.333rem;
   left: 0;
   height: 21.875rem;
-  width: 34.375rem;
+  width: 31.25rem;
 `;
 /* 메인페이지 header 검색바 */
 export const HeaderSearch = styled.div`

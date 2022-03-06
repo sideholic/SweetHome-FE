@@ -23,42 +23,46 @@ export default function DeadLineList() {
       <CommInner>
         <DeadLineCardGrid>
           <DeadLineListFlex>
-            <img src={require("../../images/building.png")} alt="HeaderImg" />
+            <img src={require("../../images/building.png")} alt="building" />
             <div>
-              <p>[부산] 빌리브 명지 듀클래스 1단지</p>
+              <p>부산광역시</p>
+              <p>빌리브 명지 듀클래스 1단지</p>
               <p className="deathLineInfo">
                 <span className="deathLineTime">D-5</span>
-                <span>부산광역시</span>
+                <span>2022.02.16 ~ 2022.03.05</span>
               </p>
             </div>
           </DeadLineListFlex>
           <DeadLineListFlex>
-            <img src={require("../../images/building.png")} alt="HeaderImg" />
+            <img src={require("../../images/building.png")} alt="building" />
             <div>
-              <p>[대구] 빌리브 명지 듀클래스 2단지</p>
+              <p>대구광역시</p>
+              <p>빌리브 명지 듀클래스 2단지</p>
               <p className="deathLineInfo">
                 <span className="deathLineTime">D-6</span>
-                <span>대구광역시</span>
+                <span>2022.02.16 ~ 2022.03.05</span>
               </p>
             </div>
           </DeadLineListFlex>
           <DeadLineListFlex>
-            <img src={require("../../images/building.png")} alt="HeaderImg" />
+            <img src={require("../../images/building.png")} alt="building" />
             <div>
-              <p>[경기] 빌리브 명지 듀클래스 3단지</p>
+              <p>경기도</p>
+              <p>빌리브 명지 듀클래스 3단지</p>
               <p className="deathLineInfo">
                 <span className="deathLineTime">D-7</span>
-                <span>경기도</span>
+                <span>2022.02.16 ~ 2022.03.05</span>
               </p>
             </div>
           </DeadLineListFlex>
           <DeadLineListFlex>
-            <img src={require("../../images/building.png")} alt="HeaderImg" />
+            <img src={require("../../images/building.png")} alt="building" />
             <div>
-              <p>[서울] 빌리브 명지 듀클래스 4단지</p>
+              <p>서울특별시</p>
+              <p>빌리브 명지 듀클래스 4단지</p>
               <p className="deathLineInfo">
                 <span className="deathLineTime">D-8</span>
-                <span>서울특별시</span>
+                <span>2022.02.16 ~ 2022.03.05</span>
               </p>
             </div>
           </DeadLineListFlex>

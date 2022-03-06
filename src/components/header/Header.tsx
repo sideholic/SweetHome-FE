@@ -23,7 +23,7 @@ export default function Header() {
       <HeaderCategory>
         <CommInner>
           <HeaderImg
-            src={require("../../images/HeaderImg.png")}
+            src={require("../../images/headerImg.png")}
             alt="HeaderImg"
           />
           <CategoryGrid>
