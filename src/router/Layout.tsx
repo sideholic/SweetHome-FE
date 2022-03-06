@@ -6,12 +6,12 @@ import {
   SpreadBtn,
 } from "../styles/LayoutStyle";
 import React, { useCallback } from "react";
+import { Link } from "react-router-dom";
 
 export default function Layout() {
   /* 펼치기 버튼 토글 */
   const onClick = useCallback((event: React.MouseEvent<HTMLDivElement>) => {
     const ulSpread = document.querySelector(".spread");
-    console.log(ulSpread);
     ulSpread?.classList.remove("active");
     ulSpread?.classList.toggle("show");
 
@@ -21,7 +21,6 @@ export default function Layout() {
 
     if (!ulSpread?.classList.contains("show")) {
       clearTimeout(timerAddClass);
-      console.log("clear");
     }
   }, []);
 
@@ -32,10 +31,12 @@ export default function Layout() {
         <LayoutList>1</LayoutList>
         <LayoutList>2</LayoutList>
         <LayoutList>
-          {/* 알람버튼 */}
-          <AlarmDiv>
-            <img src={require("../images/bell-white.png")} alt="AlarmBell" />
-          </AlarmDiv>
+          {/* 알람버튼 link 임시 */}
+          <Link to="/search">
+            <AlarmDiv>
+              <img src={require("../images/bell-white.png")} alt="AlarmBell" />
+            </AlarmDiv>
+          </Link>
         </LayoutList>
       </LayoutSpread>
       {/* 펼치기 */}
