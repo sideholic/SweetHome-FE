@@ -44,7 +44,6 @@ export const DeadLineListFlex = styled.div`
     font-size: 0.875rem;
   }
   .deathLineTime {
-    border: 1px solid #fff;
     border-radius: 1.4em;
     padding: 0.3em 0.6em;
     background-color: ${(props) => props.theme.greenColor.green3};

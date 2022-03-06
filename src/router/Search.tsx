@@ -11,12 +11,15 @@ import { SearchCategory } from "../styles/SearchStyle";
 import SearchResult from "../components/search/SearchResult";
 import React from "react";
 import Footer from "../components/footer/Footer";
+import { Link } from "react-router-dom";
 
 export default function Search() {
   return (
     <>
       <HeaderTop>
-        <Logo>SWEET HOME</Logo>
+        <Link to="/">
+          <Logo>SWEET HOME</Logo>
+        </Link>
       </HeaderTop>
       {/* 검색바 */}
       <HeaderSearch>

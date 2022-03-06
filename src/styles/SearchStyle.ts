@@ -23,7 +23,7 @@ export const SearchResultCnt = styled.span`
   margin: 1.5em 0 1.5em;
 
   span {
-    color: ${(props) => props.theme.greenColor.green5};
+    color: ${(props) => props.theme.greenColor.green4};
     margin-left: 0.25em;
   }
 `;
@@ -63,8 +63,6 @@ export const SearchResultList = styled.section`
 /* 검색결과 카드 */
 export const SearchResultCard = styled.div`
   width: 330px; // 고정
-  background-color: #f2f2f2;
-  border-radius: 0.4rem;
 
   &:nth-of-type(1),
   &:nth-of-type(2),
@@ -76,7 +74,7 @@ export const SearchResultCard = styled.div`
     display: block;
     width: 100%;
     height: 12.5rem;
-    border-radius: 0.4rem 0.4rem 0 0;
+    border-radius: 0.4rem;
   }
 `;
 /* 검색결과 카드내용 Wrapper */

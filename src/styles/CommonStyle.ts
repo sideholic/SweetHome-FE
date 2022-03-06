@@ -5,7 +5,7 @@ export const CommonMoreBtn = styled.span`
   display: block;
   position: absolute;
   right: 0;
-  bottom: 0.625rem;
+  bottom: 1.25rem;
   color: ${(props) => props.theme.greenColor.green4};
   &:after {
     content: " >";

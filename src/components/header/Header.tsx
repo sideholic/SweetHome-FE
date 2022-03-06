@@ -11,13 +11,16 @@ import {
   SearchBarDiv,
 } from "../../styles/HeaderStyle";
 import SearchBar from "./SearchBar";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
     <HeaderWrapper>
       {/* 로고 */}
       <HeaderTop>
-        <Logo>SWEET HOME</Logo>
+        <Link to="/">
+          <Logo>SWEET HOME</Logo>
+        </Link>
       </HeaderTop>
       {/* 카테고리, 이미지 */}
       <HeaderCategory>

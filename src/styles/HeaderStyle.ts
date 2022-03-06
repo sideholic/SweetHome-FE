@@ -54,7 +54,7 @@ export const Category = styled.ul`
 /* 메인페이지 그림 */
 export const HeaderImg = styled.img`
   position: absolute;
-  top: -1.333rem;
+  top: 0.25rem;
   left: 0;
   height: 21.875rem;
   width: 31.25rem;
