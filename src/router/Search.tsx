@@ -16,6 +16,7 @@ import { Link } from "react-router-dom";
 export default function Search() {
   return (
     <>
+      {/* 헤더 */}
       <HeaderTop>
         <Link to="/">
           <Logo>SWEET HOME</Logo>
