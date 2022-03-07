@@ -29,7 +29,7 @@ export default function SearchBar() {
             <a data-tip="" data-for="curationExplain">
               <BsQuestionCircle size="20" color="#fff" />
             </a>
-            <ReactTooltip id="curationExplain" aria-haspopup="true">
+            <ReactTooltip id="curationExplain" effect="solid">
               <span>ON : 큐레이션 카드내의 검색어가 자동 추가 됩니다</span>
             </ReactTooltip>
           </ToolTipExplain>

@@ -29,12 +29,58 @@ export const AlarmDiv = styled.div`
 `;
 /* 화면 우측 하단 + 펼치기 버튼 */
 export const SpreadBtn = styled.div`
+  position: relative;
   ${CommLayout};
   font-size: 38px;
   font-weight: 200;
   color: #fff;
   margin-top: 8px;
   z-index: 999;
+  &.show {
+    transform: rotateZ(360deg);
+    &:after {
+      content: "";
+      position: absolute;
+      opacity: 0;
+      left: 50%;
+      top: 50%;
+      width: 2px;
+      height: 16px;
+      margin-top: -8px;
+      margin-left: -1px;
+      background-color: #fff;
+      transition: opacity 0.6s ease-in-out;
+    }
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 2px;
+    height: 16px;
+    margin-top: -8px;
+    margin-left: -1px;
+    background-color: #fff;
+    transform: rotate(-90deg);
+    transition: opacity 0.6s ease-in-out;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    opacity: 1;
+    left: 50%;
+    top: 50%;
+    width: 2px;
+    height: 16px;
+    margin-top: -8px;
+    margin-left: -1px;
+    background-color: #fff;
+    transition: opacity 0.6s ease-in-out;
+  }
+  transition: all 0.6s ease-in-out;
 `;
 export const LayoutSpread = styled.ul`
   z-index: 998;

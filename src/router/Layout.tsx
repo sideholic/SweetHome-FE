@@ -5,25 +5,10 @@ import {
   LayoutWrapper,
   SpreadBtn,
 } from "../styles/LayoutStyle";
-import React, { useCallback } from "react";
 import { Link } from "react-router-dom";
+import { layoutBtnClick } from "../utils/utilsFn";
 
 export default function Layout() {
-  /* 펼치기 버튼 토글 */
-  const onClick = useCallback((event: React.MouseEvent<HTMLDivElement>) => {
-    const ulSpread = document.querySelector(".spread");
-    ulSpread?.classList.remove("active");
-    ulSpread?.classList.toggle("show");
-
-    const timerAddClass = setTimeout(() => {
-      ulSpread?.classList.add("active");
-    }, 700);
-
-    if (!ulSpread?.classList.contains("show")) {
-      clearTimeout(timerAddClass);
-    }
-  }, []);
-
   return (
     <LayoutWrapper>
       {/* 큐레이션 */}
@@ -40,7 +25,7 @@ export default function Layout() {
         </LayoutList>
       </LayoutSpread>
       {/* 펼치기 */}
-      <SpreadBtn onClick={onClick}>+</SpreadBtn>
+      <SpreadBtn onClick={layoutBtnClick} />
     </LayoutWrapper>
   );
 }
