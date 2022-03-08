@@ -48,6 +48,7 @@ export const FloatBox = styled.ul`
   border-radius: 0.4rem;
   text-align: center;
 `;
+/* Inner */
 export const FloatBoxInner = styled.li`
   width: 100%;
   height: 100%;
@@ -67,6 +68,65 @@ export const FloatBoxInner = styled.li`
   &:last-child {
     &:after {
       display: none;
+    }
+  }
+`;
+/* 스와이퍼 wrapper */
+export const HomeSwiperWrapper = styled.div`
+  // 임시
+  height: 400px;
+`;
+/* 분양일정 Wrapper */
+export const ScheduleWrapper = styled.div`
+  background-color: ${(props) => props.theme.greenColor.green1};
+`;
+/* 분양일정 inner */
+export const ScheduleInner = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+/* 분양일정표 */
+export const ScheduleGrid = styled.div`
+  display: grid;
+  grid-template-columns: 25% 75%;
+  width: 100%;
+  background-color: #fff;
+  margin: 2.188rem 0;
+  padding: 1.25rem;
+`;
+/* 오늘날짜 */
+export const ScheduleToday = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+/* 청약일자 리스트 */
+export const ScheduleDateInfo = styled.div``;
+
+/* 청약일자 Wrapper */
+export const DateInfoDiv = styled.div`
+  padding: 10px;
+  line-height: 1.2;
+  border-bottom: 1px solid lightgray;
+  color: #999999;
+  width: 100%;
+
+  span {
+    display: inline-block;
+    &:nth-of-type(1) {
+      width: 14%;
+      margin-right: 2.143em;
+      font-weight: bold;
+    }
+    &:nth-of-type(2) {
+      width: 70%;
+      &:before {
+        content: "|";
+        margin-right: 0.714em;
+      }
     }
   }
 `;

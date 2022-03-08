@@ -2,17 +2,30 @@ import { Link } from "react-router-dom";
 import { HeaderTop, Logo } from "../styles/HeaderStyle";
 import React from "react";
 import {
+  DateInfoDiv,
   DetailHomeInfoWrapper,
   DetailHomeWrapper,
   FloatBox,
   FloatBoxInner,
+  HomeSwiperWrapper,
   InfoDiv,
   InfoLabel,
   InfoText,
+  ScheduleDateInfo,
+  ScheduleGrid,
+  ScheduleInner,
+  ScheduleToday,
+  ScheduleWrapper,
 } from "../styles/DetailStyle";
 import { CommInner } from "../styles/GlobalStyle";
+import Footer from "../components/footer/Footer";
+import { lightTheme } from "../theme/theme";
+import { getCurrentTime } from "../utils/utilsFn";
 
 export default function Detail() {
+  // 현재일자 가져오기
+  const currentDay: Array<string> = getCurrentTime();
+
   return (
     <>
       {/* 헤더 */}
@@ -23,9 +36,9 @@ export default function Detail() {
       </HeaderTop>
       {/* 청약 상세페이지 */}
       <DetailHomeWrapper>
-        <CommInner>
-          {/* 청약 주택 정보 */}
-          <DetailHomeInfoWrapper>
+        {/* 청약 주택 정보 */}
+        <DetailHomeInfoWrapper>
+          <CommInner>
             {/* 라벨, 분양명, 상세주소 */}
             <InfoDiv>
               <InfoLabel>분양예정</InfoLabel>
@@ -95,10 +108,61 @@ export default function Detail() {
                 </InfoText>
               </FloatBoxInner>
             </FloatBox>
-          </DetailHomeInfoWrapper>
-          {/* 청약 주택 분양일정 */}
-        </CommInner>
+          </CommInner>
+        </DetailHomeInfoWrapper>
+        {/* 청약 이미지 스와이퍼 */}
+        <HomeSwiperWrapper />
+        {/* 청약 주택 분양일정 */}
+        <ScheduleWrapper>
+          <CommInner>
+            <ScheduleInner>
+              <InfoText fontWeight="bold" marginTop="3.7rem" fontSize="1.8rem">
+                분양일정
+              </InfoText>
+              <InfoText fontColor="#999999" marginTop="1.071rem">
+                분양일정은 건설사 사정에 따라 변경될 수 있습니다.
+              </InfoText>
+              {/* 분양일정표 */}
+              <ScheduleGrid>
+                <ScheduleToday>
+                  <InfoText
+                    fontColor={lightTheme.greenColor.green5}
+                    marginTop="0"
+                  >
+                    TODAY
+                  </InfoText>
+                  <InfoText fontSize="1.5rem">{currentDay[0]}</InfoText>
+                  <InfoText fontColor="#999999">{currentDay[1]}</InfoText>
+                </ScheduleToday>
+                <ScheduleDateInfo>
+                  <DateInfoDiv>
+                    <span>모집공고</span>
+                    <span>2022.03.06</span>
+                  </DateInfoDiv>
+                  <DateInfoDiv>
+                    <span>청약접수</span>
+                    <span>2022.03.10 ~ 2022.03.16</span>
+                  </DateInfoDiv>
+                  <DateInfoDiv>
+                    <span>당첨자 발표</span>
+                    <span>2022.06.23</span>
+                  </DateInfoDiv>
+                  <DateInfoDiv>
+                    <span>계약</span>
+                    <span>2022.07.05 ~ 2022.07.07</span>
+                  </DateInfoDiv>
+                  <DateInfoDiv>
+                    <span>입주예정</span>
+                    <span>2023.07.23</span>
+                  </DateInfoDiv>
+                </ScheduleDateInfo>
+              </ScheduleGrid>
+            </ScheduleInner>
+          </CommInner>
+        </ScheduleWrapper>
       </DetailHomeWrapper>
+      {/* 푸터 */}
+      <Footer />
     </>
   );
 }
