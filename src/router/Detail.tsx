@@ -21,6 +21,10 @@ import { CommInner } from "../styles/GlobalStyle";
 import Footer from "../components/footer/Footer";
 import { lightTheme } from "../theme/theme";
 import { getCurrentTime } from "../utils/utilsFn";
+import { BiBuildingHouse, BiArea, BiWon, BiPhoneCall } from "react-icons/bi";
+import { BsTextareaResize } from "react-icons/bs";
+import { GiMoneyStack } from "react-icons/gi";
+import { HiOutlineOfficeBuilding } from "react-icons/hi";
 
 export default function Detail() {
   // 현재일자 가져오기
@@ -52,58 +56,65 @@ export default function Detail() {
             {/* 분양정보 */}
             <FloatBox>
               <FloatBoxInner>
-                <InfoText fontColor="#999999" marginTop="0">
+                <BiBuildingHouse size="36" />
+                <InfoText fontColor="#999999" marginTop="0.6rem">
                   분양세대수
                 </InfoText>
-                <InfoText fontWeight="bold" marginTop="1.071rem">
+                <InfoText fontWeight="bold" marginTop="0.6rem">
                   726세대
                 </InfoText>
               </FloatBoxInner>
               <FloatBoxInner>
-                <InfoText fontColor="#999999" marginTop="0">
+                <BiArea size="36" />
+                <InfoText fontColor="#999999" marginTop="0.6rem">
                   분양면적
                 </InfoText>
-                <InfoText fontWeight="bold" marginTop="1.071rem">
+                <InfoText fontWeight="bold" marginTop="0.6rem">
                   24평(78~79㎡)
                 </InfoText>
               </FloatBoxInner>
               <FloatBoxInner>
-                <InfoText fontColor="#999999" marginTop="0">
+                <BsTextareaResize size="36" />
+                <InfoText fontColor="#999999" marginTop="0.6rem">
                   전용면적
                 </InfoText>
-                <InfoText fontWeight="bold" marginTop="1.071rem">
+                <InfoText fontWeight="bold" marginTop="0.6rem">
                   17평(56㎡)
                 </InfoText>
               </FloatBoxInner>
               <FloatBoxInner>
-                <InfoText fontColor="#999999" marginTop="0">
+                <GiMoneyStack size="36" />
+                <InfoText fontColor="#999999" marginTop="0.6rem">
                   보증금
                 </InfoText>
-                <InfoText fontWeight="bold" marginTop="1.071rem">
+                <InfoText fontWeight="bold" marginTop="0.6rem">
                   11,720만원
                 </InfoText>
               </FloatBoxInner>
               <FloatBoxInner>
-                <InfoText fontColor="#999999" marginTop="0">
+                <BiWon size="36" />
+                <InfoText fontColor="#999999" marginTop="0.6rem">
                   월세
                 </InfoText>
-                <InfoText fontWeight="bold" marginTop="1.071rem">
+                <InfoText fontWeight="bold" marginTop="0.6rem">
                   41만원
                 </InfoText>
               </FloatBoxInner>
               <FloatBoxInner>
-                <InfoText fontColor="#999999" marginTop="0">
+                <HiOutlineOfficeBuilding size="36" />
+                <InfoText fontColor="#999999" marginTop="0.6rem">
                   건설사
                 </InfoText>
-                <InfoText fontWeight="bold" marginTop="1.071rem">
+                <InfoText fontWeight="bold" marginTop="0.6rem">
                   LH공사
                 </InfoText>
               </FloatBoxInner>
               <FloatBoxInner>
-                <InfoText fontColor="#999999" marginTop="0">
+                <BiPhoneCall size="36" />
+                <InfoText fontColor="#999999" marginTop="0.6rem">
                   문의
                 </InfoText>
-                <InfoText fontWeight="bold" marginTop="1.071rem">
+                <InfoText fontWeight="bold" marginTop="0.6rem">
                   1800-2332
                 </InfoText>
               </FloatBoxInner>
@@ -119,7 +130,7 @@ export default function Detail() {
               <InfoText fontWeight="bold" marginTop="3.7rem" fontSize="1.8rem">
                 분양일정
               </InfoText>
-              <InfoText fontColor="#999999" marginTop="1.071rem">
+              <InfoText fontColor="#999999" marginTop="0.6rem">
                 분양일정은 건설사 사정에 따라 변경될 수 있습니다.
               </InfoText>
               {/* 분양일정표 */}

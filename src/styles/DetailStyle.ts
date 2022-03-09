@@ -52,7 +52,7 @@ export const FloatBox = styled.ul`
 export const FloatBoxInner = styled.li`
   width: 100%;
   height: 100%;
-  padding: 20px 0;
+  padding: 1.25rem 0;
   position: relative;
 
   &:after {
@@ -89,6 +89,7 @@ export const ScheduleInner = styled.div`
 `;
 /* 분양일정표 */
 export const ScheduleGrid = styled.div`
+  border-radius: 0.4rem;
   display: grid;
   grid-template-columns: 25% 75%;
   width: 100%;
@@ -108,7 +109,7 @@ export const ScheduleDateInfo = styled.div``;
 
 /* 청약일자 Wrapper */
 export const DateInfoDiv = styled.div`
-  padding: 10px;
+  padding: 0.625rem;
   line-height: 1.2;
   border-bottom: 1px solid lightgray;
   color: #999999;
@@ -128,5 +129,9 @@ export const DateInfoDiv = styled.div`
         margin-right: 0.714em;
       }
     }
+  }
+
+  &:last-child {
+    border-bottom: none;
   }
 `;
