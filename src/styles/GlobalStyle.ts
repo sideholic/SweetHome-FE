@@ -64,6 +64,11 @@ export const GlobalStyle = createGlobalStyle`
     font-style: normal;
     background-color: ${(props) => props.theme.bgColor};
     color: ${(props) => props.theme.textColor};
+    // 팝업시 스크롤 제한
+    &.prevent{
+      overflow: hidden;
+      height: 100%;
+    }
   }
 
   a {
