@@ -1,23 +1,29 @@
 import {
   AlarmDiv,
-  CCProgress,
-  CurationCreatePop,
   LayoutList,
   LayoutSpread,
   LayoutWrapper,
-  Overlay,
   SpreadBtn,
 } from "../styles/LayoutStyle";
 import { Link, useNavigate } from "react-router-dom";
 import { layoutBtnClick, preventScrolling } from "../utils/utilsFn";
 import CurationCreate from "../components/curation/CurationCreate";
+import { MdAddchart } from "react-icons/md";
+import { CgList } from "react-icons/cg";
+import MyCurationList from "../components/curation/MyCurationList";
 
 export default function Layout() {
   const navigate = useNavigate();
   // 큐레이션 생성
   const onCurationCreateClick = () => {
-    navigate("/curation/create");
     preventScrolling();
+    navigate("/curation/create");
+  };
+
+  // 큐레이션 리스트
+  const onCurationMyListClick = () => {
+    preventScrolling();
+    navigate("/curation/list");
   };
 
   return (
@@ -29,9 +35,11 @@ export default function Layout() {
             onClick={onCurationCreateClick}
             layoutId={"curationCreate"}
           >
-            1
+            <MdAddchart size="26" />
           </LayoutList>
-          <LayoutList>2</LayoutList>
+          <LayoutList onClick={onCurationMyListClick} layoutId={"curationList"}>
+            <CgList size="26" />
+          </LayoutList>
           <LayoutList>
             {/* 알람버튼 link 임시 */}
             <Link to="/search">
@@ -49,6 +57,7 @@ export default function Layout() {
       </LayoutWrapper>
       {/* 레이어 팝업 */}
       <CurationCreate />
+      <MyCurationList />
     </>
   );
 }

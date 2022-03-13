@@ -25,7 +25,9 @@ export default function CurationCreate() {
   // 팝업 꺼지게
   const onOverlayClick = () => {
     navigate("/");
-    setScrolling();
+    setTimeout(() => {
+      setScrolling();
+    }, 600);
   };
   // 행정구역 가져오기
   const locationList = getKoreaAdminDivision();
@@ -50,7 +52,7 @@ export default function CurationCreate() {
     <>
       {/* 큐레이션 생성 팝업 */}
       {curationCreateMatch ? (
-        <AnimatePresence>
+        <AnimatePresence key={"curationCreate"}>
           <Overlay
             onClick={onOverlayClick}
             animate={{ opacity: 1 }}

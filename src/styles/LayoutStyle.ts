@@ -12,6 +12,7 @@ export const LayoutWrapper = styled.aside`
   position: fixed;
   bottom: 50px;
   right: 50px;
+  z-index: 99;
 `;
 /* 우측하단 버튼 공통 */
 const CommLayout = css`
@@ -40,7 +41,7 @@ export const SpreadBtn = styled.div`
   font-weight: 200;
   color: #fff;
   margin-top: 8px;
-  z-index: 999;
+  z-index: 99;
   &.show {
     transform: rotateZ(360deg);
     &:after {
@@ -88,7 +89,7 @@ export const SpreadBtn = styled.div`
   transition: all 0.6s ease-in-out;
 `;
 export const LayoutSpread = styled.ul`
-  z-index: 998;
+  z-index: 98;
   overflow: hidden;
   height: 0;
   opacity: 0;
@@ -117,6 +118,7 @@ export const Overlay = styled(motion.div)`
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
+  z-index: 998;
 `;
 /* 큐레이션 생성 팝업 */
 export const CurationCreatePop = styled(motion.div)`
@@ -129,6 +131,19 @@ export const CurationCreatePop = styled(motion.div)`
   background-color: #fff;
   border-radius: 15px;
   overflow-y: auto;
+  z-index: 999;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 6px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+    background-color: darkgray;
+  }
+  &::-webkit-scrollbar-track {
+    display: none;
+  }
 `;
 /* checkbox wrapper */
 export const CurationCheckBoxWrapper = styled.div<IBoxWrapper>`
@@ -157,7 +172,7 @@ export const CurationCheckBoxWrapper = styled.div<IBoxWrapper>`
     }
   }
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     box-shadow: 0 0 10px rgb(0 0 0 / 15%);
   }
 `;

@@ -69,6 +69,17 @@ export const GlobalStyle = createGlobalStyle`
       overflow: hidden;
       height: 100%;
     }
+    &::-webkit-scrollbar {
+      width: 8px;
+      height: 6px;
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: 30px;
+      background-color: darkgray;
+    }
+    &::-webkit-scrollbar-track {
+      display: none;
+    }
   }
 
   a {
