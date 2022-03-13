@@ -1,10 +1,22 @@
 import styled, { css } from "styled-components";
-import { motion } from "framer-motion";
 
 interface IBoxWrapper {
   paddingSize?: string;
 }
-
+/* Wrapper */
+export const CCCreateWrapper = styled.div`
+  display: none;
+  &.show {
+    display: block;
+  }
+`;
+/* Wrapper */
+export const CCListWrapper = styled.div`
+  display: none;
+  &.show {
+    display: block;
+  }
+`;
 /* Wrapper */
 export const LayoutWrapper = styled.aside`
   display: flex;
@@ -105,23 +117,23 @@ export const LayoutSpread = styled.ul`
   transition: 0.6s ease-in-out;
 `;
 /* 화면 우측 하단 큐레이션 버튼 */
-export const LayoutList = styled(motion.li)`
+export const LayoutList = styled.li`
   ${CommLayout};
   color: #fff;
   margin-top: 8px;
 `;
 /* 레이어 팝업 뒷배경 */
-export const Overlay = styled(motion.div)`
+export const Overlay = styled.div`
   position: fixed;
   top: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  opacity: 0;
+  opacity: 1;
   z-index: 998;
 `;
 /* 큐레이션 생성 팝업 */
-export const CurationCreatePop = styled(motion.div)`
+export const CuartionPop = styled.div`
   position: absolute;
   width: 50vw;
   height: 80vh;
@@ -235,3 +247,5 @@ export const ConfirmBtn = styled.button`
     box-shadow: 0 0 10px rgb(0 0 0 / 15%);
   }
 `;
+/* 큐레이션 목록(생성된 카드가 없을 시) */
+export const CCEmptyCard = styled.div``;

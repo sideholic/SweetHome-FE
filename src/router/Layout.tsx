@@ -5,25 +5,28 @@ import {
   LayoutWrapper,
   SpreadBtn,
 } from "../styles/LayoutStyle";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { layoutBtnClick, preventScrolling } from "../utils/utilsFn";
 import CurationCreate from "../components/curation/CurationCreate";
 import { MdAddchart } from "react-icons/md";
 import { CgList } from "react-icons/cg";
 import MyCurationList from "../components/curation/MyCurationList";
+import { useViewportScroll } from "framer-motion";
 
 export default function Layout() {
-  const navigate = useNavigate();
-  // 큐레이션 생성
-  const onCurationCreateClick = () => {
-    preventScrolling();
-    navigate("/curation/create");
-  };
+  // 현재 스크롤 위치
+  const { scrollY } = useViewportScroll();
 
-  // 큐레이션 리스트
-  const onCurationMyListClick = () => {
+  // 큐레이션 팝업
+  const onCurationPopClick = (eleNm: string) => {
+    const pop = document.querySelector<HTMLElement>(`.${eleNm}`);
+    const popTop = document.querySelectorAll<HTMLElement>(".popupTop");
+    pop!.classList.add("show");
+
+    popTop.forEach((data) => {
+      data.style.top = `${scrollY.get() + 80}px`;
+    });
     preventScrolling();
-    navigate("/curation/list");
   };
 
   return (
@@ -31,13 +34,10 @@ export default function Layout() {
       <LayoutWrapper>
         {/* 큐레이션 */}
         <LayoutSpread className="spread">
-          <LayoutList
-            onClick={onCurationCreateClick}
-            layoutId={"curationCreate"}
-          >
+          <LayoutList onClick={() => onCurationPopClick("createPop")}>
             <MdAddchart size="26" />
           </LayoutList>
-          <LayoutList onClick={onCurationMyListClick} layoutId={"curationList"}>
+          <LayoutList onClick={() => onCurationPopClick("ccList")}>
             <CgList size="26" />
           </LayoutList>
           <LayoutList>

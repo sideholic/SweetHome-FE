@@ -2,7 +2,7 @@ import React from "react";
 
 /* 브라우저 우측 하단 펼치기 버튼 클릭시 */
 export const layoutBtnClick = (event: React.MouseEvent<HTMLDivElement>) => {
-  const ulSpread = document.querySelector(".spread");
+  const ulSpread = document.querySelector<HTMLElement>(".spread");
   ulSpread?.classList.remove("active");
   ulSpread?.classList.toggle("show");
 
@@ -61,11 +61,11 @@ export const getKoreaAdminDivision = (): Array<string> => {
 };
 // 레이어 팝업시 스크롤을 막기 위함
 export const preventScrolling = () => {
-  const body = document.querySelector("body");
+  const body = document.querySelector<HTMLElement>("body");
   body?.classList.add("prevent");
 };
 // 레이어 팝업 종료시 스크롤 재개
 export const setScrolling = () => {
-  const body = document.querySelector("body");
+  const body = document.querySelector<HTMLElement>("body");
   body?.classList.remove("prevent");
 };
